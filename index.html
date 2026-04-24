@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimuladorPedido</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <!-- Container principal da pagina-->
+     <div class="container"> 
+        <!-- Titulo principal-->
+         <h1> Simulador de Pedido do TDS261T</h1>
+         <!-- Subtitulo-->
+          <p class="subtitulo">
+            Bem-Vindo a lancheria do TDS! Aqui você come mais e paga menos.
+          </p>
+          <!-- Area que contem todos os produtos -->
+           <div class="cards">
+            <!-- CARD = UM PRODUTO-->
+            <!-- Usamos label para que clicar no card marque cheackbox-->
+             <label class="card">
+                <!-- Checkbox que identifica se o item esta selecionado-->
+                 <input type="checkbox" id="Hambúrguer">
+                 <!-- Imagem do produto-->
+                  <img src="Assets/hamburguer.png" alt="Hambúrguer">
+                  <!-- Nome do produto-->
+                   <h2> Hambúrguer</h2>
+                   <!-- Descrição-->
+                    <P> Pão, duas carne, queijo, tomate, alface.</P>
+                    <!-- Preço-->
+                     <span> R$ 25,00 </span>
+             </label>
+
+             <label class="card">
+                <!-- Checkbox que identifica se o item esta selecionado-->
+                 <input type="checkbox" id="Batata">
+                 <!-- Imagem do produto-->
+                  <img src="Assets/batatafrita.png" alt="Batata Frita">
+                  <!-- Nome do produto-->
+                   <h2> Batata Frita (M)</h2>
+                   <!-- Descrição-->
+                    <P> 500g de batata frita.</P>
+                    <!-- Preço-->
+                     <span> R$ 20,00 </span>
+             </label>
+
+             <label class="card">
+                <!-- Checkbox que identifica se o item esta selecionado-->
+                 <input type="checkbox" id="Nugets">
+                 <!-- Imagem do produto-->
+                  <img src="Assets/nugets.png" alt="Nugets">
+                  <!-- Nome do produto-->
+                   <h2> Nugets (P)</h2>
+                   <!-- Descrição-->
+                    <P> 200g de nugets de frango.</P>
+                    <!-- Preço-->
+                     <span> R$ 27,00 </span>
+             </label>
+
+             <label class="card">
+                <!-- Checkbox que identifica se o item esta selecionado-->
+                 <input type="checkbox" id="Coca-Cola">
+                 <!-- Imagem do produto-->
+                  <img src="Assets/cocacola.png" alt="Coca-Cola">
+                  <!-- Nome do produto-->
+                   <h2> Coca-Cola</h2>
+                   <!-- Descrição-->
+                    <P> Coca-Cola lata 350ml</P>
+                    <!-- Preço-->
+                     <span> R$ 4,00 </span>
+             </label>
+
+             <label class="card">
+                <!-- Checkbox que identifica se o item esta selecionado-->
+                 <input type="checkbox" id="Sorvete">
+                 <!-- Imagem do produto-->
+                  <img src="Assets/sorvete.png" alt="Sorvete">
+                  <!-- Nome do produto-->
+                   <h2> Sorvete de chocolate</h2>
+                   <!-- Descrição-->
+                    <P> Sorvete de 300g </P>
+                    <!-- Preço-->
+                     <span> R$ 21,00 </span>
+             </label>
+
+             <label class="card">
+                <!-- Checkbox que identifica se o item esta selecionado-->
+                 <input type="checkbox" id="Pizza">
+                 <!-- Imagem do produto-->
+                  <img src="Assets/pizza.png" alt="Pizza">
+                  <!-- Nome do produto-->
+                   <h2> Pizza de Calabresa (M)</h2>
+                   <!-- Descrição-->
+                    <P> Queijo, calabresa e oregano </P>
+                    <!-- Preço-->
+                     <span> R$ 40,00 </span>
+                     </label>
+           </div>
+            <!-- Botão que chama a função calcular() para somar o pedido-->
+             <button onclick="calcular()"> Calcular Pedido</button>
+             <!-- Area de resultado do pedido-->
+              <div id="resultado" class="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

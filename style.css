@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+
+    /* fonte do texto*/
+    font-family:'Times New Roman', Times, serif;
+    background-color:rgb(250, 242, 132);
+    color:rgb(50, 49, 49)
+    
+}
+/* Container central da pagina*/
+.container{
+    max-width: 1100px; /*largura máxima*/
+    margin: 30px; /*centraliza*/
+    padding: 20px;
+    text-align: center;
+}
+h1{
+    color:#ff73ff
+}
+.subtitulo{
+    color:#f56ce1
+}
+/* Area dos cards*/
+.cards{
+    display: flex; /* coloca lado a lado*/
+    flex-wrap: wrap; /* quebra linha*/
+    justify-content: center;
+    gap: 20px; /* espçao entre cards*/
+}
+.card{
+    width: 220px;
+    background-color: rgb(179, 234, 252);
+    border-radius: 16px; /* arredonda as bordas*/
+    padding: 15px;
+    box-shadow: 0 4px 12px rgb(22, 52, 93);
+    cursor: pointer; 
+
+    /*animação*/
+    transition: transform 0.2s;
+    position: relative;
+}
+
+/*Efeito de mose ao passar*/
+.card:hover{
+    transform: scale(1.03)
+}
+/* Checkbox dentro card*/
+.card input{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+}
+/* Imagem*/
+.card img{
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+/* Nome do produto*/
+.card h2{
+    color:rgb(253, 122, 244)
+}
+/* Preço*/
+.card span{
+    font-weight: bold;
+}
+/* Botão*/
+button{
+    margin-top: 30px;
+    background-color: #ff73ff;
+    color: rgb(242, 232, 217);
+    border: none;
+    border-radius: 10px;
+}
+/* Resultado*/
+.resultado{
+    margin-top: 30px;
+    background: rgb(242, 232, 217);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgb(253, 122, 244);
+    text-align: left;
+}
